@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Grid</title>
+</head>
+<body>
+    <main class="form-wrapper">
+        <div class="form-side">
+         <a href="#" title="logo" class="logo"><!--logo--></a>
+          <form class="my-form">
+            <div class="form-welcome-row">
+               <h1>Welcome back! &#128079;</h1>
+               <h2>Login with your account!</h2>
+            </div>
+            
+            <div class="socials-row">
+               <a href="#" title="Use Apple">
+                  <img src="./images/apple.png" alt="Apple">Continue with apple
+               </a>
+            </div>
+
+            <div class="socials-row">
+               <a href="#" title="Use Google">
+                  <img src="./images/google.png" alt="Apple">Continue with Google
+               </a>
+            </div>
+              
+            <div class="divider">
+               <div class="divider-line"></div>or<div class="divider-line"></div>
+            </div>
+
+            <div class="text-field">
+               <label for="email">Email</label>
+               <input type="email" name="email" id="email" placeholder="you@example.com" required>
+               <div class="error-message">Email incorrect</div>
+            </div>
+            
+            <div class="text-field">
+               <label for="password">Password</label>
+               <input type="password" name="password" id="password" placeholder="Your password" title="Minimum 6 characters at least one Alphabet and one Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+               <div class="error-message">Password incorrect
+            </div>
+
+           <button class="my-form_button" type="submit">Sign In</button>
+
+            <div class="my-form_actions">
+               <div class="my-form_row">
+                  <span>Don't have an account?</span>
+                  <a href="#"title="Reset Password">"Sign Up Now</a>
+               </div>
+            </div>
+
+          </form>
+        </div>
+    </main>
+
+    <aside class="info-side">
+      <div class="blockquote-wrapper">
+         <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Feel the pain, enjoy the bitter process and keep putting. I guarantee that the universe will align to favour you.</p>&mdash; Anusiem Chidubem (@chidu_hundred) <a href="https://twitter.com/chidu_hundred/status/1758897631265448253?ref_src=twsrc%5Etfw">February 17, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+         <div class="author">
+            <img src="./images/Avatar.png" alt="Avatar" class="avatar">
+            <span class="author-name">@Hundredz</span>
+         </div>
+      </div>
+    </aside>
+</body>
+</html>

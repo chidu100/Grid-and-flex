@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+:root {
+    --primary: #000000;
+    --primary-light: #22211f;
+    --primary-disabled: #363435;
+    --primary-lighter: #454344;
+    --secondary: #1d1d1d;
+    --text: #11181c;
+    --text-gray: #687076;
+    -text-placeholder: #8890a7;
+    --border: #dfe3e6;
+    --btn-bg: #ededed;
+    --input-bg: #f1f2f3;
+    --background: #f8f8ff;
+    --error: #e5484d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #454344;
+    color: white;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    background: #f8f8ff;
+}
+
+.socials-row{
+    display: flex;
+}
+
+.socials-row img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.socials-row>a {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    min-height: 2.75rem;
+    display: flex;
+    gap: 0.75rem;
+    color: var(--text);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border: 1px solid #dfe3e6;
+    transition: all 0.3s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 4px 0;
+}
+
+.socials-row>a svg {
+    color: #11181c;
+}
+
+.socials-row>a:hover {
+    background-color: #ededed;
+}
+
+.form-welcome-row {
+    margin-bottom: 1rem;
+}
+
+.form-welcome-row h1 {
+    color: #11181c;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: normal;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.form-welcome-row h2 {
+    color: #687076;
+    font-size: 1.10rem;
+    font-weight: normal;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    gap: 16px;
+    align-items: center;
+}
+
+.divider-line {
+    width: 100%;
+    height: 1px;
+    background: black;
+    opacity: .2;
+}
+
+.form-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 1rem;
+    max-height: 200rem;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    height: 4rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.my-form_button {
+    background-color: #000000;
+    border: 1px solid #454344;
+    color: white;
+    white-space: nowrap;
+    display: grid;
+    place-items: center;
+    margin-top: 1.5rem;
+    line-height: 2.75rem;
+    outline: none;
+    border: none;
+    font-size: 1.125rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: all .3s ease;
+}
